@@ -3,14 +3,15 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
 
+// Environment variable-lardan config dəyərlərini alırıq
 const firebaseConfig = {
-  apiKey: "AIzaSyC9mz4ZD3xms10kdslcHImeZaVY-rawEG8",
-  authDomain: "seymursite-8bd16.firebaseapp.com",
-  projectId: "seymursite-8bd16",
-  storageBucket: "seymursite-8bd16.firebasestorage.app",
-  messagingSenderId: "285928583091",
-  appId: "1:285928583091:web:0611ac2dd8246b7df765c6",
-  measurementId: "G-SLMV8KCFCV"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
 };
 
 const app = initializeApp(firebaseConfig);
@@ -18,4 +19,3 @@ const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
 export const db = getFirestore(app);
 export const storage = getStorage(app);
-
