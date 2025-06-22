@@ -1,5 +1,5 @@
 import '../assets/Css/Header.css'
-import profileImg from '../assets/Img/profile.jpg'; 
+import profileImg from '../assets/img/profile.jpg'; 
 import github from '../assets/img/icon2.png';
 import javascript from '../assets/img/javascript-logo-javascript-icon-transparent-free-png.webp'
 import VsCode from '../assets/img/Visual_Studio_Code_1.35_icon.svg.png'
