@@ -1,5 +1,5 @@
 import '../assets/Css/Header.css'
-import profileImg from '../assets/Img/2c47d5dd5b532f83bb55c4cd6f5bd1ef.jpg'; 
+ 
 import github from '../assets/img/icon2.png';
 import javascript from '../assets/img/javascript-logo-javascript-icon-transparent-free-png.webp'
 import VsCode from '../assets/img/Visual_Studio_Code_1.35_icon.svg.png'
@@ -17,7 +17,7 @@ const Header = () =>{
                 <div className="profileCard">
                     <div className="imgcard">
                         <div className="img">
-                           <img src={profileImg} alt="profile" />
+                           <img  alt="profile" />
                         </div>
 
                         <img src={github} className='bouncing-icon github' alt="" />
